@@ -1,16 +1,16 @@
-# Write a program which accepts one number and prints cube of that number.
+# Write a program which accepts one number and prints all even numbers till that number.
 
 def Display(Value):
-    Value = Value ** 3
-    return(Value)
+    for i in range(1,Value+1):
+        if((i % 2) == 0):
+            print(i,end = "  ")
 
 def main():
     No = 0
-    Result = 0
 
     No = int(input("Enter the number : "))
-    Result = Display(No)
-    print("Cube of number is :",Result)
+
+    Display(No)
 
 if __name__ == "__main__":
     main()
